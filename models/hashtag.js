@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  sequelize.define('hashtag', {
+  return sequelize.define('hashtag', {
     title: {
       type: DataTypes.STRING(15),
       allowNull: false,
@@ -7,6 +7,9 @@ module.exports = (sequelize, DataTypes) => {
     }
   }, {
     timestamps: true,
-    paranoid: true
+    paranoid: true,
+    charset: 'utf8',
+    collate: 'utf8_general_ci'
   })
+  return sequelize.define;
 };

@@ -1,15 +1,18 @@
 module.exports = (sequelize, DataTypes) => {
-  sequelize.defind('post', {
+  return sequelize.define('post', {
     content: {
       type: DataTypes.STRING(140),
-      allowNull: false
+      allowNull: false,
     },
     img: {
       type: DataTypes.STRING(200),
-      allowNull: true
-    }
+      allowNull: true,
+    },
   }, {
     timestamps: true,
-    paranoid: true
+    paranoid: true,
+    charset: 'utf8',
+    collate: 'utf8_general_ci'
   })
+  return sequelize.define;
 };
