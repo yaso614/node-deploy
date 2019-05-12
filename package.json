@@ -1,0 +1,23 @@
+{
+  "name": "nodebird",
+  "version": "0.0.1",
+  "description": "SNS service created using express",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaso614/nodebird.git"
+  },
+  "author": "heming",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yaso614/nodebird/issues"
+  },
+  "homepage": "https://github.com/yaso614/nodebird#readme",
+  "dependencies": {
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.8.5"
+  }
+}
