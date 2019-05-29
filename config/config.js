@@ -2,7 +2,7 @@ require('dotenv').config();
 
 module.exports = {
   development: {
-    username: 'root',
+    username: process.env.USER_NAME,
     password: process.env.SEQUELIZE_PASSWORD,
     database: 'nodebird',
     host: '127.0.0.1',
@@ -10,7 +10,7 @@ module.exports = {
     operatorAliases: 'false'
   },
   production: {
-    username: 'root',
+    username: process.env.USER_NAME,
     password: process.env.SEQUELIZE_PASSWORD,
     database: 'nodebird',
     host: '127.0.0.1',
