@@ -7,7 +7,7 @@ const flash = require('connect-flash');
 const passport = require('passport');
 const helmet = require('helmet');
 const hpp = require('hpp');
-const RedisStore = require('connect-reids')(session);
+const RedisStore = require('connect-redis')(session);
 require('dotenv').config();
 
 const pageRouter = require('./routes/page');
